@@ -23,7 +23,7 @@
 			<div class="search">
 				<form style="color: #a2836e">
                     <i class="far fa-shopping-bag"></i>
-					<input type="search" class="search1" placeholder="search">
+					<input type="search" class="search1"  placeholder="search" id="search">
 					<button class="button1" type="submit" style="color: #a2836e"><i class="fas fa-search" style="color: #a2836e"></i></button>
 				</form>
 			</div>
@@ -90,27 +90,40 @@
         		</form> -->
         	</div>
         	</div>
-        	
-         <div id="Contactdiv" style="background-color: #a2836e">
+          
+        	<div id="barsecurity" style="background-color: #484f4f ;">
+           <div id="delevery" >
+            <p><i class="fas fa-truck" style="color: white ; size: 50px"></i> <span style="text-align: center; color: white;">Free delivery in Tunisia</span></p>
+          </div> 
+          <div id="security" >
+            <p><i class="fas fa-lock" style="color: white"></i> <span style="text-align: center; color: white;">secure Payment</span></p>
+          </div>
+          <div id="quality" >
+            <p><i class="fas fa-file-contract" style="color: white"></i> <span style="text-align: center ; color: white;">Value Quality</span></p>
+          </div>
+           </div>
+          </div>
+         <div id="Contactdiv" style="background-color: #c4b7a6">
           <div id="fb" style="height: 200px;">
-            <p><a href="#" ><i class="fab fa-facebook-square" style="background:white" ></i></a><br> <span style="text-align: center;">Yummy shop<br> FACEBOOK page</span> <br><a href="#">Join-us !</a> </p>
+            <p><a href="#" ><i class="fab fa-facebook-f" style="color: blue ; font-size: 30px" ></i></a><br> <span style="text-align: center;">Yummy shop<br> FACEBOOK page</span> <br><a href="#">Join-us !</a> </p>
           </div>
         <div id="instagram" >
-            <p><a href="#"><i class="fab fa-instagram" ></i></a><br> <span style="text-align: center;">Yummy shop<br> INSTAGRAM account</span> <br><a href="#" >Join-us !</a> </p>
+            <p><a href="#"><i class="fab fa-instagram" style='color: black ; font-size: 30px'></i></a><br> <span style="text-align: center;">Yummy shop<br> INSTAGRAM account</span> <br><a href="#" >Join-us !</a> </p>
           </div>
           <div id="gmail" >
-            <p><a href="#" ><i class="fas fa-envelope-square" ></i></a><br> <span style="text-align: center;">Yummy shop<br> Email</span> <br><a href="#" >contact@yammyshop.com.tn !</a> </p>
+            <p><a href="#" ><i class="fas fa-envelope-square" style="color: red;font-size: 30px" ></i></a><br> <span style="text-align: center;">Yummy shop<br> Email</span> <br><a href="#" >contact@yammyshop.com.tn !</a> </p>
           </div>
           <div id="phone" >
-            <p><a href="#" ><i class="fas fa-phone-square-alt" ></i></a><br> <span style="text-align: center;" >Yummy shop<br> PHONE NUMBER</span> <br><a href="#" >call-us-70765436</a></p>
+            <p><a href="#" ><i class="fas fa-phone-square-alt" style="color: green ;font-size: 30px"></i></a><br> <span style="text-align: center;" >Yummy shop<br> PHONE NUMBER</span> <br><a href="#" >call-us-70765436</a></p>
           </div>
           <div id="loc">
-            <p><a href="#" ><i class="fas fa-map-marked-alt"  ></i></a><br> <span style="text-align: center;">Yummy shop<br>FOUND STORE</span> <br><a href="#" > next to you !</a> </p>
+            <p><a href="#" ><i class="fas fa-map-marked-alt" style="color: grey ;font-size: 30px" ></i></a><br> <span style="text-align: center;">Yummy shop<br>FOUND STORE</span> <br><a href="#" > next to you !</a> </p>
           </div>
       </div>
 
+
 <!-- dark -->
-<div class="accordion" id="accordionExample">
+<div class="accordion" id="accordionExample" style="color: black">
   <div class="card">
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
@@ -305,7 +318,7 @@
            </div>
                </div>
                <div class="slide">
-                    <div class="box">
+                    <div class="box" >
                <p class="time">New </p>
                <div class="img-box">
                    <img src="lindt.jpg" style="width:100px">
@@ -372,6 +385,9 @@
   <p id="price">Total Price = 0 </p>
   <p id='select'>Selected Items = 0 </p>
 </div>
+<ul class="list-group" id="list"></ul>
+
+
   
 
 
@@ -401,6 +417,7 @@ $('.bigdiv').hide()
 $('#About').show()
 $('.accordion').hide()
       $('.contact').hide()
+      $('#barsecurity').show()
 
 
 })
@@ -413,6 +430,7 @@ $('.bigdiv').show()
    $('#Contactdiv').show()
    $('.accordion').hide()
          $('.contact').hide()
+         $('#barsecurity').show()
 
 })
 $('#Catalogue').click(function(){
@@ -422,6 +440,7 @@ $('#Catalogue').click(function(){
    $('.bigdiv').hide()
    $('.accordion').show()
       $('.contact').hide()
+      $('#barsecurity').hide()
 
 
 })
@@ -432,8 +451,9 @@ $('#contact1').click(function(){
    $('.bigdiv').hide()
    $('.accordion').hide()
    $('.contact').show()
-
+   $('#barsecurity').hide()
 }) 
+
 
 
 
@@ -450,8 +470,12 @@ function adcart(){
 
 
 
+
 	
 	
 </script>
+
+</script>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

@@ -112,15 +112,27 @@ padding:60px;
 	height: 50px;
 }
 #Contactdiv{
-	background-color:#a2836e;
+	background-color:#e6e2d3;
 	height: 800px;
 	
 	display: flex;
 	  justify-content: space-between;
 	  flex-wrap: wrap;
-	  margin :20px;
-	  padding-left:100px;
+	  margin-left: 0;
+	  margin-right: 0;
+	  padding: 30px;
 
+	 /* padding-left:100px;*/
+
+}
+#barsecurity{
+	height: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
+
+	display: flex;
+	  justify-content: space-between;
+	  flex-wrap: wrap;
 }
 .form{
 	background-color: white;
@@ -272,4 +284,11 @@ input[type=submit]:hover {
    width: 100%;
    margin-top: 0;
  }
+}
+.contact{
+	/*margin-right: 300px;*/
+	margin-left: 400px;
+	box-shadow: 5px 10px;
+	text-align: center;
+	width: 550px;
 }
