@@ -34,7 +34,7 @@ body {
 
 header {
 	height: 50px;
-	background-color: rgba(225,225,225,0.6);
+/*	background-color: rgba(225,225,225,0.6);*/
 	width: 100%;
 }
 .hat {
@@ -152,7 +152,7 @@ padding:60px;
 display: flex;
  justify-content: space-between;
 }
-.slider-box{
+.box{
 margin: 20px;
 height: 350px;
 width:250px;
@@ -166,7 +166,7 @@ align-items: center;
 text-align:center;
 border:1px solid rgba(187,187,187,0.40);
 }
-.slider-box a{
+.box a{
 text-decoration: none;
 text-align: center;
 
@@ -195,7 +195,7 @@ box-sizing: border-box;
 font-size:13px;
 line-height: 35px;
 }
-.price{
+.prices{
 color:#FFFFFF;
 background-color:#ff555b;
 line-height: 20px;
@@ -213,10 +213,10 @@ align-items: center;
 .cart a{
 color:#FFFFFF;
 }
-.slider-box:hover{
+.box:hover{
 box-shadow: 2px 2px 12px rgba(47,47,47,0,40)
 }
-.slider-box:hover .img-box img{
+.box:hover .img-box img{
 transform: scale(1.07);
 transition: all ease 0.3s;
 }
@@ -226,8 +226,50 @@ background-color:#fe9048;
 box-shadow: 2px 2px 12px rgba(47,47,47,0.40);
 transition: all ease 0.1s;
 }
-.swiper-container{
+.scontainer{
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
+}
+#accordionExample{
+	margin-left:200px;
+	margin-right: 200px;
+	margin-top: 20px
+
+}
+input[type=submit]:hover {
+ background-color: #45a049;
+}
+
+.contact {
+ border-radius: 5px;
+ background-color: #f2f2f2;
+ padding: 20px;
+}
+
+.col-25 {
+ float: left;
+ width: 25%;
+ margin-top: 6px;
+}
+
+.col-75 {
+ float: left;
+ width: 75%;
+ margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+ .col-25, .col-75, input[type=submit] {
+   width: 100%;
+   margin-top: 0;
+ }
 }
