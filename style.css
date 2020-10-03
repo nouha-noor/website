@@ -292,3 +292,87 @@ input[type=submit]:hover {
 	text-align: center;
 	width: 550px;
 }
+.products-container{
+	max-width:650px;
+	justify-content: space-around;
+	margin: 0 auto;
+	margin-top:50px;
+}
+
+
+.products-container{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	flex-wrap: wrap;
+	padding: 100px;
+}
+.product-header{
+	width: 100%;
+	max-width: 650px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 4px solid #808080;
+	margin :0 auto;
+}
+.products-container i{
+	font-size: 25px;
+	color:blue;
+	margin-left:10px;
+	margin-right: 10px;
+	cursor: pointer;
+
+}
+.product-title{
+	width: 	35%;
+}
+.price {
+         width: 15%;
+         display: flex;
+         align-items: center;
+}
+.total {
+         width: 10%;
+         display: flex;
+         align-items: center;
+}
+.quantity{
+
+	width: 30%;
+	display: flex;
+	align-items: center;
+}
+.product{
+	width: 45%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 0;
+
+}
+.product i{
+	cursor: pointer;
+}
+.products{
+	width: 100%;
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.products img{
+	
+	width: 75px;
+	
+}
+.basketTotalContainer{
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	padding: 10px 0 ;
+}
+.basketTotalTitle{
+	width: 30%;
+}
+.basketTotal{
+	width: 10%;
+}
